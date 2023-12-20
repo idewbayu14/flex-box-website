@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Quicksand&family=Signika+Negative:wght@300&family=Young+Serif&display=swap');
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f8f8f8; /* Light gray background */
+    height: 100vh;
+    font-family: 'Young Serif', sans-serif;
+    margin: 0;
+
+    background-color: rgb(252, 252, 252);
+    display: flex;
+    flex-direction: column;
+}
+
+header.navbar-container {
+    display: flex;
+    width: 100%;
+    height: 110px;
+    
+    justify-content: space-around;
+    align-items: center;
+
+    background-color: #c3c3c3;
+    padding-block: 1rem;
+    z-index: 999;
+}
+
+header.navbar-container .logo img {
+    width: 150px;
+    cursor: pointer;
+    
+}
+
+header.navbar-container .nav-list ul {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    gap: 2rem 1rem;
+}
+
+header.navbar-container .nav-list li {
+    list-style-type: none;
+}
+
+header.navbar-container .nav-list a {
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 100;
+    color: black;
+    padding: .5rem 1.5rem;
+    border-radius: 500px;
+    transition: background-color 0.3s ease;
+}
+
+header.navbar-container .nav-list li:hover a{
+    background-color: #424242;
+    color: white;
+}
+
+main {
+    max-width: 1300px;
+    width: 100%;
+    margin-inline: auto;
+    padding: 2rem 5rem;
+    flex: 1;
+
+    
+    align-items: center;
+}
+
+main .content {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    height: 40vh;
+    margin: 50px auto;
+    box-sizing: border-box;
+}
+
+main .content .content-description{
+    flex: 1 1;
+    text-align: justify;
+}
+
+main .content .content-description .title {
+    font-size: 1.5rem;
+    margin-block: 1rem;
+}
+
+main .content .content-description button {
+    padding: .5rem 0.5rem;
+    margin-block-start: 0.5rem;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-family: 'Young Serif', sans-serif;
+    color: white;
+    
+    border: 3px solid transparent;
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: #424242;
+    transition: all .15s ease-in;
+}
+
+main .content .content-description button:hover{
+    border: 3px solid #424242;
+    color: black;
+    background-color: transparent;
+}
+
+main .content .content-image {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+main .content .content-image img {
+    margin: auto;
+    min-width: 250px;
+    width:280px;
+}
+
+article {
+    padding: 2rem;
+    width: 100%;
+}
+
+/* bagian 1 Content Shoes */
+
+article .content-shoes {
+    box-sizing: border-box;
+    margin-inline: auto;
+}
+
+
+article .content-shoes .content-satu,
+article .content-shoes .content-dua,
+article .content-shoes .content-tiga {
+    flex: 1;
+    padding: 1rem;
+    text-align: center;
+}
+
+article .content-shoes .content-satu p,
+article .content-shoes .content-dua p,
+article .content-shoes .content-tiga p {
+    text-align: justify;
+}
+
+article .content-shoes img {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+}
+
+/* bagian 2 Content Shoes */
+article .content-shoes-satu {
+    box-sizing: border-box;
+    margin-inline: auto;
+}
+
+article .content-shoes-satu .content-satu,
+article .content-shoes-satu .content-dua,
+article .content-shoes-satu .content-tiga {
+    flex: 1;
+    padding: 1rem;
+    text-align: center;
+}
+
+article .content-shoes-satu .content-satu p,
+article .content-shoes-satu .content-dua p,
+article .content-shoes-satu .content-tiga p {
+    text-align: justify;
+}
+
+article .content-shoes-satu img {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+}
+
+main aside {
+    position: fixed;
+    inset-block: 0;
+    inset-inline-end: 0;
+}
+
+main aside .biodata {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+main aside .biodata ul {
+    padding: 1.5rem 1rem;
+    margin: auto;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    background-color: #c3c3c3;
+
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    max-width: 120px;
+    justify-content: center;
+    gap: 1.5rem;
+    }
+
+main aside .biodata li{
+    list-style-type: none;
+    align-content: center;
+}
+
+main aside .biodata p{
+    list-style-type: none;
+    color: white;
+    font-size: 14px; /* Menyesuaikan ukuran font */
+    text-align: center; /* Mengatur teks menjadi tengah */
+}
+
+main aside .biodata img{
+    width: 200px;
+}
+
+/* Footer Style */
+.socmed{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.socmed img{
+    padding-left: 40px;
+    padding-right: 40px;
+    
+}
+footer{
+    padding-top: 50px;
+    margin-top: 70px;
+    width: 100%;
+    height: 200px;
+    background-color: #c3c3c3;
+}
+footer #copyright{
+    font-size: 15px;
+    color: #424242;
+    margin: 25px auto;
+    text-align: center;
+}
+
+/* Responsive breakpoint*/
+
+/* Ukuran Tablet */
+@media screen and (max-width: 768px) {
+    header.navbar-container {
+        flex-direction: column;
+    }
+
+    header.navbar-container .nav-list ul {
+        width: 50%;
+        padding-left: 50%;
+    }
+    header.navbar-container {
+        height: 200px;
+    }
+
+    main .content {
+      flex-direction: column;
+      justify-content: space-between;
+      display: flex;
+      padding-top: 10px;
+    }
+   
+    main .content .content-description .title {
+      font-size: 2rem;
+    }
+   
+    main .content .content-description p {
+      font-size: 0.8rem;
+    }
+   
+    main .content .content-image {
+      order: -1;
+    }
+
+    article {
+        padding-top: 60px;
+    }
+}
+
+@media screen and (max-width: 568px) {
+    .menu-toggle {
+        display: flex;
+    }
+
+}
+
+@media ( min-width: 600px ) {
+    article .content-shoes {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    article .content-shoes-satu {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
